@@ -1,0 +1,96 @@
+<view class="body">
+	  <view style="justify-content: center; line-height: {{menuheight + 'rpx'}}; position: fixed; top: {{menutop + 'rpx'}}; left: {{menuright}}; z-index: 1000;">
+		<van-icon bindtap="before" size="45rpx" name="arrow-left" />
+	  </view>
+	  <view style="width: 100vw; background-color: #f4f7f9; height: {{menuheight + 2 * menutop - statusheight + 'rpx'}}; z-index: 9999;"></view>
+	  <view class="nav" style="position: fixed; top: 0; left: 0; line-height: {{menuheight + 'rpx'}}; display: flex; align-items: center; justify-content: center; padding-top: {{menutop + 'rpx'}}; padding-bottom: {{menutop - statusheight + 'rpx'}}; width: 100vw; height: {{menuheight + 'rpx'}}; font-weight: 600; z-index: 999; background-color: #fff;">{{allmessage[0].nickname}}的动态</view>
+		<view class="info" wx:for="{{allmessage}}" wx:key="index">
+							<view class="title">
+									<view style="display: flex; align-items: center; justify-content: center;" class="left">
+										<view wx:if="{{item.anonymity === '不匿名'}}" class="tou"><image mode="aspectFill" src="{{item.touxiang}}"></image></view>
+									<view wx:if="{{item.anonymity === '匿名' && item.sex === '男'}}" class="tou"><image mode="aspectFill" src="https://www.yellowwei.cn/img/avatar06 1.png"></image></view>
+									<view wx:if="{{item.anonymity === '匿名' && item.sex === '女'}}" class="tou"><image mode="aspectFill" src="https://www.yellowwei.cn/img/avatar32 1.png"></image></view>
+									<view class="person">
+											<view wx:if="{{item.anonymity === '不匿名'}}" class="boxone">
+												  <view class="nickname">{{item.nickname}}</view>
+													<view class="sex">
+														<image wx:if="{{item.sex === '男'}}" src="https://www.yellowwei.cn/img/Group 75.png"></image>
+														<image wx:else src="https://www.yellowwei.cn/img/Group 63.png"></image>
+													</view>
+											</view>
+											<view wx:else class="boxone">
+												  <view class="nickname">匿名用户</view>
+													<view class="sex">
+														<image wx:if="{{item.sex === '男'}}" src="https://www.yellowwei.cn/img/Group 75.png"></image>
+														<image wx:else src="https://www.yellowwei.cn/img/Group 63.png"></image>
+													</view>
+											</view>
+											<view wx:if="{{item.anonymity === '不匿名'}}" class="boxtwo">
+														<view class="txtone">{{item.school}}</view>
+														<view class="txttwo">{{item.grade}}</view>
+											</view>
+											<view wx:else class="boxtwo">
+														<view class="txtone">xx校区</view>
+											</view>
+									</view>
+									</view>
+									<view data-id="{{item.id}}" bindtap="todongtai" style="display: flex; flex: 1; height: 80rpx;" class="kongbai"></view>
+							</view>
+							<view data-id="{{item.id}}" bindtap="todongtai" class="xianzhi">
+								<view class="content {{contentheight[index].height * 2 > 240 ? 'yincang' : ''}}">
+										<view class="txt">
+												{{item.publishtxt}}
+										</view>
+										<view class="zhanshi" wx:if="{{contentheight[index].height * 2 > 240}}">查看全文</view>
+								</view>
+							</view>
+							<block wx:if="{{m1.shuzu(item.publishimg) !== 0}}">
+								<view class="imglist">
+										<view wx:for="{{m1.shuzu(item.publishimg)}}" wx:key="index"  wx:for-item="itemtwo" wx:if="{{m1.shuzu(item.publishimg).length === 1}}" class="oneimg">
+													<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										<view wx:if="{{m1.shuzu(item.publishimg).length === 2}}" class="twoimg" wx:for="{{m1.shuzu(item.publishimg)}}" wx:for-item="itemtwo" wx:key="index">
+												<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										<view wx:if="{{m1.shuzu(item.publishimg).length === 3}}" class="package">
+											<view class="threeimg" wx:for="{{m1.shuzu(item.publishimg)}}" wx:for-item="itemtwo" wx:key="index">
+												<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										</view>
+										<view wx:if="{{m1.shuzu(item.publishimg).length === 4}}" class="package liwai">
+											<view class="fourimg" wx:for="{{m1.shuzu(item.publishimg)}}" wx:key="index" wx:for-item="itemtwo">
+												<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										</view>
+										<view wx:if="{{m1.shuzu(item.publishimg).length === 5}}" class="packagetwo">
+											<view class="fiveimg" wx:for="{{m1.shuzu(item.publishimg)}}" wx:key="index" wx:for-item="itemtwo">
+												<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										</view>
+										<view wx:if="{{m1.shuzu(item.publishimg).length === 6}}" class="package">
+											<view class="siximg" wx:for="{{m1.shuzu(item.publishimg)}}" wx:key="index" wx:for-item="itemtwo">
+												<image data-src="{{itemtwo}}" data-id="{{m1.shuzu(item.publishimg)}}" bindtap="enlarge" src="{{itemtwo}}" mode="aspectFill"></image>
+										</view>
+										</view>
+						  	</view>
+							</block>
+							<view class="time">{{m1.getDateDiff(item.publishtime)}}</view>
+							<view class="function">
+										<view bindtap="addlove" class="box">
+											<image src="https://www.yellowwei.cn/img/Group 93.png"></image>
+											<view wx:if="{{item.love === 0}}" class="number">点赞</view>
+											<view wx:else class="number">{{item.love}}</view>
+										</view>
+										<view data-id="{{item.id}}" bindtap="todongtai" class="box">
+											<image src="https://www.yellowwei.cn/img/message-3-line.png"></image>
+											<view wx:if="{{item.review === 0}}" class="number">抢首评</view>
+											<view wx:else class="number">{{item.review}}</view>
+										</view>
+										<button open-type="share" class="box">
+											<image src="https://www.yellowwei.cn/img/share-line.png"></image>
+											<button class="number">分享</button>
+										</button>
+							</view>
+					</view>
+</view>
+<wxs src="/utils/tools.wxs" module="m1"></wxs>

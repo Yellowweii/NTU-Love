@@ -1,0 +1,122 @@
+.body{
+	width: 100vw;
+	/* height: 100vh; */
+}
+.img{
+	display: flex;
+	position: relative;
+}
+.tou{
+	width: 180rpx;
+	height: 180rpx;
+	border-radius: 90rpx;
+	margin-top: 50rpx;
+	margin-left: 30rpx;
+}
+.xiugai{
+	  position: absolute;
+		width: 60rpx;
+		height: 60rpx;
+		bottom: -6rpx;
+		left: 215rpx;
+}
+.info{
+	width: 93vw;
+	margin: 0 auto;
+	background: #FFFFFF;
+  box-shadow: 0px 2rpx 16rpx rgba(0, 0, 0, 0.25);
+	border-radius: 20rpx;
+	margin-top: 48rpx;
+	padding: 20rpx 0rpx;
+}
+.info .gao{
+		max-width: 93vw;
+		height: 140rpx;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 4rpx solid #F0F5F2;
+		justify-content: space-evenly;
+		margin: 0 40rpx;
+}
+.info .title{
+	font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32rpx;
+  line-height: 34rpx;  
+  color: rgba(0, 0, 0, 0.4);
+}
+.info .content{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32rpx;
+line-height: 34rpx;
+color: #000000;
+}
+.info .info-five{
+	  position: relative;
+		max-width: 93vw;
+		padding: 56rpx 40rpx;
+}
+.add{
+	width: 27vw;
+	height: 27vw;
+	margin-right: 2rpx;
+	margin-bottom: 2rpx;
+	border: 4rpx solid #f3f3f3;
+	box-sizing: border-box;
+	background-color: #f6f6f6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img-list{
+	width: 100%;
+	margin-top: 10rpx;
+	display: flex;
+	flex-wrap: wrap;
+}
+.img-item{
+	position: relative;
+	width: 27vw;
+	height: 27vw;
+	margin-right: 2rpx;
+	margin-bottom: 2rpx;
+	border: 4rpx solid #f3f3f3;
+	box-sizing: border-box;
+}
+.img-item image{
+	width: 100%;
+	height: 100%;
+}
+.van-icon-close{
+	position: absolute !important;
+	top: 3rpx !important;
+	right: 3rpx !important;
+	z-index: 999 !important;
+}
+.btn{
+	width: 55vw;
+	height: 90rpx;
+	border-radius: 45rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30rpx;
+line-height: 36rpx;
+color: #FFFFFF;
+background: rgba(173, 214, 81, 0.9);
+margin: 100rpx auto;
+margin-bottom: 0;
+}
+.qipao{
+	position: absolute;
+	width: 346rpx;
+	height: 64rpx;
+	top: 0;
+	left: 90rpx;
+}

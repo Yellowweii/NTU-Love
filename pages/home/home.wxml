@@ -1,0 +1,67 @@
+<view class="body">
+  <view style="position: absolute; top: {{menutop}}; left: {{menuright}};"><van-icon bindtap="before" wx:if="{{id !== 0}}" size="50rpx" name="arrow-left" /> </view>
+	<view class="info">
+		<block wx:if="{{id === 0}}">
+			<view class="info-one">
+				你的性别
+			</view>
+			<view class="info-two"></view>
+			<view class="container">
+				<view data-select="{{1}}" bindtap="click" class="leftone {{select === 1 ? 'boy' : ''}}">
+					<image src="https://www.yellowwei.cn/img/avatar06 1.png" style="width: 144rpx; height: 144rpx;"></image>
+				</view>
+				<view data-select="{{2}}" bindtap="click" class="rightone {{select === 2 ? 'girl' : ''}} ">
+					<image src="https://www.yellowwei.cn/img/avatar32 1.png" style="width: 144rpx; height: 144rpx;"></image>
+				</view>
+			</view>
+			<view class="info-three">
+				<view class="left">奇迹boy</view>
+				<view class="right">甜酷girl</view>
+			</view>
+			<view class="info-four">
+				<view class="dian"></view>
+				<view class="left">性别只有一次选择的机会哦</view>
+				<button bindtap="after" disabled="{{flag}}" class="right">下一步</button>
+			</view>
+		</block>
+		<block wx:if="{{id === 1}}">
+			<view class="info-one">
+				你的生日
+			</view>
+			<view class="info-two"></view>
+			<birthday bind:day="getday" bind:height="getheight" bind:year="getyear" bind:month="getmonth"></birthday>
+			<view class="info-four">
+				<button style="bottom: {{bottom + keyheight * 2 + 'rpx'}};" bindtap="aftertwo" disabled="{{flagtwo}}" class="righttwo">下一步</button>
+			</view>
+		</block>
+		<block wx:if="{{id === 2}}">
+			<view class="info-one">你的身高</view>
+			<view class="info-two"></view>
+			<picker-view bindchange="getlength" indicator-class="middle" style="width: 100%; height: 500rpx;" value="{{[25]}}">
+				<text style="font-weight: 700; position: absolute; top: 230rpx; right: 60rpx;">cm</text>
+				<picker-view-column>
+					<view wx:for="{{years}}" wx:key="index" style=" font-weight: 700; line-height: 100rpx; text-align: center;">{{item}}</view>
+				</picker-view-column>
+			</picker-view>
+			<view class="info-four">
+				<button bindtap="after" class="right">下一步</button>
+			</view>
+		</block>
+		<block wx:if="{{id === 3}}">
+			<view class="info-one">
+				你的家乡
+			</view>
+			<view class="info-two"></view>
+			<picker mode="region" bindchange="bindRegionChange" value="{{region}}" >
+				<view class="picker">
+					<text>{{region[0]}}</text>
+					<text>{{region[1]}}</text>
+					<text>{{region[2]}}</text>
+				</view>
+			</picker>
+			<view class="info-four">
+				<button bindtap="after" class="right">下一步</button>
+			</view>
+		</block>
+	</view>
+</view>

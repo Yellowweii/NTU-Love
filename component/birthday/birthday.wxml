@@ -1,0 +1,8 @@
+<view class="container">
+			<input bindblur="blurone" bindfocus="focusone" bindinput="inputone"	placeholder-class="placeholder" type="number" maxlength="4" placeholder="{{year}}" value="{{year1}}" />
+			<view>年</view>
+			<input bindblur="blurtwo" bindfocus="focustwo"  bindinput="inputtwo" maxlength="2" focus="{{flag}}" placeholder-class="placeholder" type="number" placeholder="{{month}}" value="{{month1}}" />
+			<view>月</view>
+			<input bindblur="blurthree" bindfocus="focusthree" bindinput="inputthree" maxlength="2" placeholder-class="placeholder" type="number" placeholder="{{day}}" value="{{day1}}" />
+			<view>日</view>
+</view>

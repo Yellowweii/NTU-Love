@@ -1,0 +1,41 @@
+<view class="body">
+	<view style="justify-content: center; line-height: {{menuheight}}; position: absolute; top: {{menutop}}; left: {{menuright}};"><van-icon bindtap="before" size="45rpx" name="arrow-left" /> </view>
+	<view class="nav" style="line-height: {{menuheight}}; display: flex; align-items: center; justify-content: center; padding-top: {{menutop}}; width: 100vw; height: {{menuheight}};">个人信息</view>
+	<view class="img">
+		 <image mode="aspectFill" bindtap="modify" class="tou" src="{{picture[0]}}"></image>
+		 <image mode="aspectFill" bindtap="modify" class="xiugai" src="https://www.yellowwei.cn/img/Group 64.png"></image>
+	</view>
+	<view class="info">
+			<view class="gao info-one">
+					<view class="title">昵称</view>
+					<input bindinput="inputone" value="{{nickname}}" class="content"></input>
+			</view>
+			<view class="gao info-two">
+					<view class="title">身高</view>
+					<input bindinput="inputtwo" value="{{height}}" class="content"></input>
+			</view>
+			<view class="gao info-three">
+				<view class="title">生日</view>
+					<input bindinput="inputthree" value="{{birthday}}" class="content"></input>
+			</view>
+			<view class="gao info-four">
+				  <view class="title">我的家乡</view>
+					<input bindinput="inputfour" value="{{hometown}}" class="content"></input>
+			</view>
+			<view class="info-five">
+				  <view class="title">主页背景</view>
+					<view class="img-list">
+						<view wx:for="{{picture}}" wx:key="index" class="img-item">
+							<image data-id="{{index}}" bindtap="enlarge" src="{{item}}" mode="aspectFill"></image>
+							<van-icon wx:if="{{index !== 0}}" data-id="{{index}}" bindtap="close" size="40rpx" name="close" />
+						</view>
+						<view bindtap="uploadimg" wx:if="{{picture.length < 6}}" class="add">
+							<image style="width: 80rpx; height: 80rpx;" src="https://www.yellowwei.cn/img/add.png"></image>
+						</view>
+	        </view>
+					<image class="qipao" src="https://www.yellowwei.cn/img/Group 76.png"></image>
+			</view>
+	</view>
+</view>
+<view bindtap="save" class="btn">保存修改</view>
+<view style="height: 100rpx;"></view>

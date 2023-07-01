@@ -1,0 +1,139 @@
+.body{
+	width: 100vw;
+	height: 100vh;
+	background-color: #ADD651;
+	position: relative;
+}
+.img{
+	position: absolute;
+	width: 400rpx;
+	height: 400rpx;
+	z-index: 999;
+	right: 5vw;
+	top: 6vh;
+}
+.info{
+	height: 80vh;
+	width: 100vw;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	border-top-left-radius: 60rpx;
+	border-top-right-radius: 60rpx;
+}
+.info-one{
+	margin-left: 82rpx;
+	margin-top: 150rpx;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 64rpx;
+line-height: 78rpx;
+color: #000000;
+}
+.info-two{
+	font-size: 30rpx;
+	color: #c4c4c4;
+	margin-left: 82rpx;
+	margin-top: 15rpx;
+}
+.info-three{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100rpx;
+}
+.info-three input{
+	width: 85vw;
+	height: 105rpx;
+	border-radius: 52rpx;
+	background-color: #9ea0a12f;
+	padding-left: 45rpx;
+	box-sizing: border-box;
+}
+button[disabled] {
+	color: #fff !important;
+	background: #9ea0a1ab !important;
+	border: 0 !important;
+}
+.submit{
+	position: absolute;
+	right: 30rpx;
+	width: 250rpx;
+	height: 80rpx;
+	background-color: #ADD651;
+	color: #fff;
+	border-radius: 40rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35rpx;
+}
+.middle{
+	width: 90%;
+	margin-left: 40rpx;
+	height: 105rpx;
+	border-radius: 52rpx;
+	background-color: #9ea0a12f;
+}
+.middle::before {
+  content: none;
+}
+.middle::after {
+  content: none;
+}
+picker-view{
+	margin-top: 100rpx;
+}
+.modal-mask{
+	width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+	color: #fff;
+	z-index: 9000;
+}
+.content{
+	position: absolute;
+	left: 100rpx;
+	top: 25vh;
+	width: 576rpx;
+	height: 752rpx;
+  background-image: url(https://www.yellowwei.cn/img/Group33.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20rpx;
+	z-index: 9900;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36rpx;
+line-height: 44rpx;
+text-align: center;
+color: #000000;
+}
+.content .title{
+	margin-top: 430rpx;
+	margin-bottom: 5rpx;
+}
+.content .btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 80rpx;
+	background-color: #ADD651;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32rpx;
+line-height: 38rpx;
+color: #FFFFFF;
+border-radius: 40rpx;
+margin-top: 100rpx;
+}

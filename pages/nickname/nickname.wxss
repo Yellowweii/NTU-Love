@@ -1,0 +1,151 @@
+.body{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://www.yellowwei.cn/img/Group30.png);
+	background-size: cover;
+	position: relative;
+}
+.info{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+.info-one{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 64rpx;
+line-height: 78rpx;
+color: #000000;
+margin-top: 152rpx;
+margin-left: 52rpx;
+}
+.info-two{
+	width: 78rpx;
+  height: 0px;
+	border-bottom: 9rpx solid #ADD651;
+	margin-left: 60rpx;
+	margin-top: 25rpx;
+}
+.img{
+	width: 184rpx;
+	height: 184rpx;
+	margin-left: 284rpx;
+	margin-top: 124rpx;
+}
+.info-three{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 60rpx;
+}
+.info-three input{
+	width: 90vw;
+	height: 105rpx;
+	border-radius: 52rpx;
+	background-color: #9ea0a12f;
+	padding-left: 45rpx;
+	box-sizing: border-box;
+}
+.info-four{
+	margin-top: 30rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.info-four .dian{
+	width: 16rpx;
+	height: 16rpx;
+	border-radius: 8rpx;
+	background-color: #ADD651;
+	margin-right: 8rpx;
+}
+.info-four .left{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30rpx;
+line-height: 30rpx;
+color: rgba(0, 0, 0, 0.4);
+}
+.submit{
+	position: absolute;
+	right: 30rpx;
+	width: 250rpx;
+	height: 80rpx;
+	background-color: #ADD651;
+	color: #fff;
+	border-radius: 40rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35rpx;
+}
+button[disabled] {
+	color: #fff !important;
+	background: #9ea0a1ab !important;
+	border: 0 !important;
+}
+.modal-mask{
+	width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+	color: #fff;
+	z-index: 9000;
+}
+.content{
+	position: absolute;
+	left: 100rpx;
+	top: 25vh;
+	width: 576rpx;
+	height: 752rpx;
+  background-image: url(https://www.yellowwei.cn/img/Group32.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20rpx;
+	z-index: 9900;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36rpx;
+line-height: 44rpx;
+text-align: center;
+color: #000000;
+}
+.content .title{
+	margin-top: 400rpx;
+	margin-bottom: 5rpx;
+}
+.content .btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 80rpx;
+	background-color: #ADD651;
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32rpx;
+line-height: 38rpx;
+color: #FFFFFF;
+border-radius: 40rpx;
+margin-top: 50rpx;
+}
+.content .no{
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 28rpx;
+line-height: 30rpx;
+color: rgba(0, 0, 0, 0.301);
+margin-top: 32rpx;
+}
+
+

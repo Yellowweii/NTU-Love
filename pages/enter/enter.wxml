@@ -1,0 +1,8 @@
+<view class="bg">
+	<van-transition name="fade" custom-class="block" show="{{ show }}" duration="{{ { enter: 3000} }}">
+		<view class="zhan"></view>
+	  <van-button type="primary" block bindtap="click">开启通大交友之旅</van-button>
+	</van-transition>
+	<!-- <view class="love">love.</view> -->
+</view>
+
