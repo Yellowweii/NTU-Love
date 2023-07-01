@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/nickname/nickname",
+    "pages/enter/enter",
+    "pages/confirm/confirm",
+    "pages/college-circle/college-circle",
+    "pages/message/message",
+    "pages/me/me",
+    "pages/publish/publish",
+    "pages/edit/edit",
+    "pages/persondetail/persondetail",
+    "pages/all-message/all-message",
+    "pages/detail/detail",
+    "pages/detail-message/detail-message",
+    "pages/comment/comment"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "birthday": "/component/birthday/birthday",
+    "van-button": "@vant/weapp/button/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-popup": "@vant/weapp/popup/index"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/college-circle/college-circle",
+      "text": "动态",
+      "iconPath": "/img/Group 36.png",
+      "selectedIconPath": "/img/Group 36 (1).png"
+      },
+      {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/img/Group 40.png",
+      "selectedIconPath": "/img/Group 40 (1).png"
+      }
+  ]
+  },
+  "lazyCodeLoading": "requiredComponents"
+}
