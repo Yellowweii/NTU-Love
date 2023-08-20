@@ -6,6 +6,6 @@
 <img width="300" alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/0d2a4696-b757-4b3f-adc2-d90da5186336">
 <img width="300" alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/974462a7-8530-4b8a-be19-6461fedf8703">
 <img width="300" alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/9f44075e-2603-4ec4-9c60-be6b183cf679">
-<img width="300" alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/3eee5876-a713-471f-b4a5-c111c9580909">
+<img alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/3eee5876-a713-471f-b4a5-c111c9580909">
 
 
