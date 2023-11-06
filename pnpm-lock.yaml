@@ -1,0 +1,18 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@vant/weapp':
+    specifier: ^1.11.1
+    version: registry.npmmirror.com/@vant/weapp@1.11.1
+
+packages:
+
+  registry.npmmirror.com/@vant/weapp@1.11.1:
+    resolution: {integrity: sha512-2QddSq3MsozbTBAgEmW1rhzsEJNWPF2VS427M5pOOn0a7/f6lW+tymwdTcOQCzQONavhFwBv6Lebbs/UjE3Yig==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vant/weapp/-/weapp-1.11.1.tgz}
+    name: '@vant/weapp'
+    version: 1.11.1
+    dev: false
