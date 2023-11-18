@@ -1,46 +1,43 @@
-.bg{
-	width: 100vw;
-	height: 100vh;
-	background-image: url(https://www.yellowwei.cn/img/Group25.png);
-	background-size: cover;
-	position: relative;
-	background-repeat: no-repeat;
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://www.yellowwei.cn/img/Group25.png);
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
 }
-.love{
-position: absolute;
-left: 50rpx;
-top: 150rpx;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 96rpx;
-line-height: 116rpx;
-color: #FFFFFF;
+.love {
+  position: absolute;
+  left: 50rpx;
+  top: 150rpx;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96rpx;
+  line-height: 116rpx;
+  color: #ffffff;
 }
-.earth{
-position: absolute;
-left: 50rpx;
-top: 270rpx;
-font-family: 'Inter';
-font-style: normal;
-font-size: 40rpx;
-line-height: 48rpx;
-letter-spacing: 0.1em;
-color: #FFFFFF;
-padding-bottom: 13rpx;
-border-bottom: 3rpx solid #fff;
+.earth {
+  position: absolute;
+  left: 50rpx;
+  top: 270rpx;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 40rpx;
+  line-height: 48rpx;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding-bottom: 13rpx;
+  border-bottom: 3rpx solid #fff;
 }
-.desc{
-	position: absolute;
-	top: 360rpx;
-	left: 50rpx;
-	font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24rpx;
-line-height: 24rpx;
-color: #FFFFFF;
+.desc {
+  position: absolute;
+  top: 360rpx;
+  left: 50rpx;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #ffffff;
 }
-
-
-

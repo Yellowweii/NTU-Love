@@ -1,90 +1,101 @@
 <view class="body">
-		<view class="bg">
-				<view style="padding-top: {{navigateheight}};" class="info">
-						<view class="left">			
-								<image mode="aspectFill" bindtap="todetail" class="left-img" src="{{picture[0]}}"></image>
-								<view class="left-txt">
-										<view class="top">
-												<view class="nickname">{{nickname}}</view>
-												<block wx:if="{{vipswitch === 0}}">
-													 <image class="icon" src="https://www.yellowwei.cn/img/VIP1.png"></image>
-												</block>
-												<block wx:else>
-													 <image class="icon" src="https://www.yellowwei.cn/img/VIP2.png"></image>
-												</block>
-										</view>
-										<view class="bottom">
-												<block wx:if="{{id === 1}}">
-														<text bindtap="toconfirm" class="txt">快去实名认证吧</text>
-												</block>
-												<block wx:if="{{id === 2}}">
-													<image class="icon" src="https://www.yellowwei.cn/img/Arrows_History.png"></image>
-												  <view class="txt">资料审核中...</view>
-												</block>
-												<block wx:if="{{id === 3}}">
-													<image class="icon" src="https://www.yellowwei.cn/img/Group 51.png"></image>
-												  <view class="txt">审核未通过，请修改</view>
-												</block>
-												<block wx:if="{{id === 4}}">
-													<image class="icon" src="https://www.yellowwei.cn/img/Group 50.png"></image>
-												  <view class="txt">已认证</view>
-												</block>
-										</view>
-								</view>
-						</view>
-						<view class="right">
-								<button bindtap="edit" class="btn">编辑资料</button>
-						</view>
+	<view class="bg">
+		<view style="padding-top: {{navigateheight}};" class="info">
+			<view class="left">
+				<image
+				 mode="aspectFill"
+				 bindtap="todetail"
+				 class="left-img"
+				 src="{{picture[0]}}"
+				/>
+				<view class="left-txt">
+					<view class="top">
+						<view class="nickname">{{nickname}}</view>
+						<block wx:if="{{vipswitch === 0}}">
+							<image class="icon" src="https://www.yellowwei.cn/img/VIP1.png" />
+						</block>
+						<block wx:else>
+							<image class="icon" src="https://www.yellowwei.cn/img/VIP2.png" />
+						</block>
+					</view>
+					<view class="bottom">
+						<block wx:if="{{id === 1}}">
+							<text bindtap="toconfirm" class="txt">快去实名认证吧</text>
+						</block>
+						<block wx:if="{{id === 2}}">
+							<image class="icon" src="https://www.yellowwei.cn/img/Arrows_History.png" />
+							<view class="txt">资料审核中...</view>
+						</block>
+						<block wx:if="{{id === 3}}">
+							<image class="icon" src="https://www.yellowwei.cn/img/Group 51.png" />
+							<view class="txt">审核未通过，请修改</view>
+						</block>
+						<block wx:if="{{id === 4}}">
+							<image class="icon" src="https://www.yellowwei.cn/img/Group 50.png" />
+							<view class="txt">已认证</view>
+						</block>
+					</view>
 				</view>
+			</view>
+			<view class="right">
+				<button bindtap="edit" class="btn">编辑资料</button>
+			</view>
 		</view>
-		<view bindtap="contact" class="ad"></view>
-		<view class="function">
-				<button bindtap="getvip" open-type="share" class="item-one">
-						<view class="left">
-								<image class="icon" src="https://www.yellowwei.cn/img/推荐 1.png"></image>
-								<view class="txt">推荐给校友</view>
-						</view>
-						<view class="right">
-							 <view class="txt">分享可得vip</view>
-							 <van-icon size="36rpx" name="arrow" />
-						</view>
-				</button>
-				<view bindtap="contact" class="item-one">
-						<view class="left">
-								<image class="icon" src="https://www.yellowwei.cn/img/意见反馈.png"></image>
-								<view class="txt">意见反馈</view>
-						</view>
-						<view class="right">
-							 <van-icon size="38rpx" name="arrow" />
-						</view>
-				</view>
-				<button open-type="contact" class="item-one">
-						<view class="left">
-								<image class="icon" src="https://www.yellowwei.cn/img/Headphones.png"></image>
-								<view class="txt">人工客服</view>
-						</view>
-						<view class="right">
-							 <van-icon size="36rpx" name="arrow" />
-						</view>
-				</button>
-				<button bindtap="exit" class="item-one">
-						<view class="left">
-								<image class="icon" src="https://www.yellowwei.cn/img/logout.png"></image>
-								<view class="txt">退出登录</view>
-						</view>
-						<view class="right">
-							 <van-icon size="36rpx" name="arrow" />
-						</view>
-				</button>
+	</view>
+	<view bindtap="contact" class="ad" />
+	<view class="function">
+		<button bindtap="getvip" open-type="share" class="item-one">
+			<view class="left">
+				<image class="icon" src="https://www.yellowwei.cn/img/推荐 1.png" />
+				<view class="txt">推荐给校友</view>
+			</view>
+			<view class="right">
+				<view class="txt">分享可得vip</view>
+				<van-icon size="36rpx" name="arrow" />
+			</view>
+		</button>
+		<view bindtap="contact" class="item-one">
+			<view class="left">
+				<image class="icon" src="https://www.yellowwei.cn/img/意见反馈.png" />
+				<view class="txt">意见反馈</view>
+			</view>
+			<view class="right">
+				<van-icon size="38rpx" name="arrow" />
+			</view>
 		</view>
+		<button open-type="contact" class="item-one">
+			<view class="left">
+				<image class="icon" src="https://www.yellowwei.cn/img/Headphones.png" />
+				<view class="txt">人工客服</view>
+			</view>
+			<view class="right">
+				<van-icon size="36rpx" name="arrow" />
+			</view>
+		</button>
+		<button bindtap="exit" class="item-one">
+			<view class="left">
+				<image class="icon" src="https://www.yellowwei.cn/img/logout.png" />
+				<view class="txt">退出登录</view>
+			</view>
+			<view class="right">
+				<van-icon size="36rpx" name="arrow" />
+			</view>
+		</button>
+	</view>
 </view>
-<view class="modal-mask" wx:if="{{showmodal}}"></view>
+<view class="modal-mask" wx:if="{{showmodal}}" />
 <swiper indicator-dots="true" wx:if="{{showmodal}}">
-		<swiper-item>
-				<image bindtap="enlargehw" src="https://www.yellowwei.cn/img/hw.jpg" mode="aspectFit"></image>
-		</swiper-item>
-		<swiper-item>
-				<image bindtap="enlargetlw" src="https://www.yellowwei.cn/img/tlw.jpg" mode="aspectFit"></image>
-		</swiper-item>
+	<swiper-item>
+		<image bindtap="enlargehw" src="https://www.yellowwei.cn/img/hw.jpg" mode="aspectFit" />
+	</swiper-item>
+	<swiper-item>
+		<image bindtap="enlargetlw" src="https://www.yellowwei.cn/img/tlw.jpg" mode="aspectFit" />
+	</swiper-item>
 </swiper>
-<image bindtap="close" wx:if="{{showmodal}}" class="close" src="https://www.yellowwei.cn/img/Group 53.png"></image>
+<image
+ bindtap="close"
+ wx:if="{{showmodal}}"
+ class="close"
+ src="https://www.yellowwei.cn/img/Group 53.png"
+/>
+
