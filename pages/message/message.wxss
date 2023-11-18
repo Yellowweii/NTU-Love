@@ -1,38 +1,38 @@
-.unconfirm{
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(134, 146, 148, 0.164);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.unconfirm {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(134, 146, 148, 0.164);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.unconfirm .info-two{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 40rpx;
-line-height: 30rpx;
-text-align: center;
-color: rgba(0, 0, 0, 0.4);
+.unconfirm .info-two {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40rpx;
+  line-height: 30rpx;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }
-.unconfirm .info-one{
-	width: 300rpx;
-	height: 300rpx;
+.unconfirm .info-one {
+  width: 300rpx;
+  height: 300rpx;
 }
-.unconfirm .info-three{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32rpx;
-line-height: 38rpx;
-color: #FFFFFF;
-	width: 70vw;
-	height: 80rpx;
-	border-radius: 40rpx;
-	background-color: #ADD651;
-	margin-top: 70rpx;
+.unconfirm .info-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32rpx;
+  line-height: 38rpx;
+  color: #ffffff;
+  width: 70vw;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #add651;
+  margin-top: 70rpx;
 }

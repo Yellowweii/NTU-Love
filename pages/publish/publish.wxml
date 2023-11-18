@@ -1,49 +1,78 @@
 <view class="body">
-	<view style="justify-content: center; line-height: {{menuheight}}; position: absolute; top: {{menutop}}; left: {{menuright}};"><van-icon bindtap="before" size="45rpx" name="arrow-left" /> </view>
+	<view style="justify-content: center; line-height: {{menuheight}}; position: absolute; top: {{menutop}}; left: {{menuright}};">
+		<van-icon bindtap="before" size="45rpx" name="arrow-left" />
+	</view>
 	<view class="nav" style="line-height: {{menuheight}}; display: flex; align-items: center; justify-content: center; padding-top: {{menutop}}; width: 100vw; height: {{menuheight}};">发布动态</view>
 	<view class="info" style="width: 94vw; margin: 50rpx auto">
-		<textarea value="{{value}}" bindinput="input" bindblur="blur" bindfocus="focus" auto-focus="{{true}}" auto-height="{{true}}" placeholder="分享生活、结交朋友、寻找伴侣..." show-confirm-bar="{{false}}" maxlength="-1" style="width: 100%; max-height: 500rpx;"></textarea>
+		<textarea
+		 value="{{value}}"
+		 bindinput="input"
+		 bindblur="blur"
+		 bindfocus="focus"
+		 auto-focus="{{true}}"
+		 auto-height="{{true}}"
+		 placeholder="分享生活、结交朋友、寻找伴侣..."
+		 show-confirm-bar="{{false}}"
+		 maxlength="-1"
+		 style="width: 100%; max-height: 500rpx;"
+		/>
 	</view>
-<block wx:if="{{imglist.length > 0}}">
-	<view class="img-list">
+	<block wx:if="{{imglist.length > 0}}">
+		<view class="img-list">
 			<view wx:for="{{imglist}}" wx:key="index" class="img-item">
-					<image data-id="{{index}}" bindtap="enlarge" src="{{item.tempFilePath}}" mode="aspectFill"></image>
-					<van-icon data-id="{{index}}" bindtap="closeimg" size="40rpx" name="close" />
+				<image
+				 data-id="{{index}}"
+				 bindtap="enlarge"
+				 src="{{item.tempFilePath}}"
+				 mode="aspectFill"
+				/>
+				<van-icon
+				 data-id="{{index}}"
+				 bindtap="closeimg"
+				 size="40rpx"
+				 name="close"
+				/>
 			</view>
 			<view bindtap="uploadimage" wx:if="{{imglist.length > 0 && imglist.length < 6}}" class="add">
-				<image style="width: 80rpx; height: 80rpx;" src="https://www.yellowwei.cn/img/add.png"></image>
+				<image style="width: 80rpx; height: 80rpx;" src="https://www.yellowwei.cn/img/add.png" />
 			</view>
-	</view>
-</block>
-<block wx:if="{{videolist.length > 0}}">
-	<view class="video-list">
+		</view>
+	</block>
+	<block wx:if="{{videolist.length > 0}}">
+		<view class="video-list">
 			<view wx:for="{{videolist}}" wx:key="index" class="video-item">
-					<video src="{{item.tempFilePath}}" mode="aspectFill"></video>
-					<van-icon data-id="{{index}}" bindtap="closevideo" size="40rpx" name="close" />
+				<video src="{{item.tempFilePath}}" mode="aspectFill" />
+				<van-icon
+				 data-id="{{index}}"
+				 bindtap="closevideo"
+				 size="40rpx"
+				 name="close"
+				/>
 			</view>
 			<view bindtap="uploadvideo" wx:if="{{videolist.length > 0 && videolist.length < 6}}" class="add">
-				<image style="width: 80rpx; height: 80rpx;" src="https://www.yellowwei.cn/img/add.png"></image>
+				<image style="width: 80rpx; height: 80rpx;" src="https://www.yellowwei.cn/img/add.png" />
 			</view>
-	</view>
-</block>
-		<view style="height: {{height + 'rpx'}}; bottom: {{keyheight * 2 + 'rpx'}};" class="zhan">
-			<view class="bottom">
+		</view>
+	</block>
+	<view style="height: {{height + 'rpx'}}; bottom: {{keyheight * 2 + 'rpx'}};" class="zhan">
+		<view class="bottom">
 			<view class="left">
-					<image bindtap="uploadimage" class="icon-one" src="https://www.yellowwei.cn/img/Group.png"></image>
-					<image bindtap="uploadvideo" class="icon-two" src="https://www.yellowwei.cn/img/Group (1).png"></image>
+				<image bindtap="uploadimage" class="icon-one" src="https://www.yellowwei.cn/img/Group.png" />
+				<image bindtap="uploadvideo" class="icon-two" src="https://www.yellowwei.cn/img/Group (1).png" />
 			</view>
 			<view class="right">
-				  <view bindtap="yes" class="one">
-						<image wx:if="{{!flag}}" class="imgone" src="https://www.yellowwei.cn/img/Ellipse 12.png"></image>
-						<image wx:if="{{flag}}" class="imgtwo" src="https://www.yellowwei.cn/img/Group 61.png"></image>
-				   	<view>匿名发布</view>
-					</view>
-					<view class="two">
-						<view>公开</view>
-				  	<van-icon size="38rpx" name="arrow" />
-					</view>
-					<button disabled="{{index === 0}}" bindtap="publish" class="three">发布</button>
+				<view bindtap="yes" class="one">
+					<image wx:if="{{!flag}}" class="imgone" src="https://www.yellowwei.cn/img/Ellipse 12.png" />
+					<image wx:if="{{flag}}" class="imgtwo" src="https://www.yellowwei.cn/img/Group 61.png" />
+					<view>匿名发布</view>
+				</view>
+				<view class="two">
+					<view>公开</view>
+					<van-icon size="38rpx" name="arrow" />
+				</view>
+				<button disabled="{{index === 0}}" bindtap="publish" class="three">发布</button>
 			</view>
-	</view>
 		</view>
+	</view>
 </view>
+

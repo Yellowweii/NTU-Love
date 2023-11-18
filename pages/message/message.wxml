@@ -1,7 +1,8 @@
 <block wx:if="{{true}}">
-		<view class="unconfirm">
-				<image class="info-one" src="https://www.yellowwei.cn/img/Icon.png"></image>
-				<view class="info-two">只有实名认证后才可以查看消息哦</view>
-				<button bindtap="toconfirm" class="info-three">实名认证</button>
-		</view>
+	<view class="unconfirm">
+		<image class="info-one" src="https://www.yellowwei.cn/img/Icon.png" />
+		<view class="info-two">只有实名认证后才可以查看消息哦</view>
+		<button bindtap="toconfirm" class="info-three">实名认证</button>
+	</view>
 </block>
+

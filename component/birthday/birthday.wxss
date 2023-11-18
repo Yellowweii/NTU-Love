@@ -1,22 +1,22 @@
-.container{
-	margin: 20rpx auto;
-	width: 75vw;
-	display: flex;
-	justify-content: space-around;
-	padding: 30rpx 50rpx;
-	background-color: #9ea0a12f;
-	border-radius: 80rpx;
-	align-items: center;
+.container {
+  margin: 20rpx auto;
+  width: 75vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 30rpx 50rpx;
+  background-color: #9ea0a12f;
+  border-radius: 80rpx;
+  align-items: center;
 }
-.container input{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	font-size: 50rpx;
-	align-items: center;
-	font-weight: 550;
+.container input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50rpx;
+  align-items: center;
+  font-weight: 550;
 }
-.placeholder{
-	font-size: 50rpx;
-	font-weight: normal;
+.placeholder {
+  font-size: 50rpx;
+  font-weight: normal;
 }

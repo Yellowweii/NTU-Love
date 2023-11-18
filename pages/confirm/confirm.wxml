@@ -1,52 +1,112 @@
 <view class="body">
-  <view style="position: absolute; top: {{menutop}}; left: {{menuright}};"><van-icon bindtap="before" wx:if="{{id !== 0}}" size="50rpx" name="arrow-left" /> </view>
-	<image class="img" src="https://www.yellowwei.cn/img/Group4.png"></image>
+	<view style="position: absolute; top: {{menutop}}; left: {{menuright}};">
+		<van-icon
+		 bindtap="before"
+		 wx:if="{{id !== 0}}"
+		 size="50rpx"
+		 name="arrow-left"
+		/>
+	</view>
+	<image class="img" src="https://www.yellowwei.cn/img/Group4.png" />
 	<view class="info">
 		<block wx:if="{{id === 0}}">
 			<view class="info-one">姓名</view>
 			<view class="info-two">请填写你的真实姓名哦</view>
 			<view class="info-three">
-				<input value="{{valueone}}" focus="{{focus}}" bindinput="inputone" bindblur="blur" bindfocus="focus" placeholder="输入姓名" type="text" />
+				<input
+				 value="{{valueone}}"
+				 focus="{{focus}}"
+				 bindinput="inputone"
+				 bindblur="blur"
+				 bindfocus="focus"
+				 placeholder="输入姓名"
+				 type="text"
+				/>
 			</view>
-			<button bindtap="after" disabled="{{flagone}}" style="bottom: {{bottom + keyheight * 2}}rpx;" class="submit">下一步</button>
+			<button
+			 bindtap="after"
+			 disabled="{{flagone}}"
+			 style="bottom: {{bottom + keyheight * 2}}rpx;"
+			 class="submit"
+			>下一步
+			</button>
 		</block>
 		<block wx:if="{{id === 1}}">
 			<view class="info-one">你的学号</view>
 			<view class="info-three">
-				<input value="{{valuetwo}}" focus="{{focus}}" bindinput="inputtwo" bindblur="blur" bindfocus="focus" placeholder="输入学号" type="text" />
+				<input
+				 value="{{valuetwo}}"
+				 focus="{{focus}}"
+				 bindinput="inputtwo"
+				 bindblur="blur"
+				 bindfocus="focus"
+				 placeholder="输入学号"
+				 type="text"
+				/>
 			</view>
-			<button bindtap="after" disabled="{{flagtwo}}" style="bottom: {{bottom + keyheight * 2}}rpx;" class="submit">下一步</button>
+			<button
+			 bindtap="after"
+			 disabled="{{flagtwo}}"
+			 style="bottom: {{bottom + keyheight * 2}}rpx;"
+			 class="submit"
+			>下一步
+			</button>
 		</block>
 		<block wx:if="{{id === 2}}">
 			<view class="info-one">你的校区</view>
-			<picker-view indicator-class="middle" style="width: 100%; height: 500rpx;" value="{{[1]}}" bindchange="bindchangeone">
-      <picker-view-column>
-        <view wx:for="{{arr}}" wx:key="index" style="font-weight: 700; line-height: 100rpx; text-align: center;">{{item}}</view>
-      </picker-view-column>
-      </picker-view>
+			<picker-view
+			 indicator-class="middle"
+			 style="width: 100%; height: 500rpx;"
+			 value="{{[1]}}"
+			 bindchange="bindchangeone"
+			>
+				<picker-view-column>
+					<view wx:for="{{arr}}" wx:key="index" style="font-weight: 700; line-height: 100rpx; text-align: center;">{{item}}</view>
+				</picker-view-column>
+			</picker-view>
 			<button bindtap="after" style="bottom: 50rpx;" class="submit">下一步</button>
 		</block>
 		<block wx:if="{{id === 3}}">
 			<view class="info-one">你的年级</view>
-			<picker-view indicator-class="middle" style="width: 100%; height: 500rpx;" value="{{[1]}}" bindchange="bindchangetwo">
-      <picker-view-column>
-        <view wx:for="{{arr1}}" wx:key="index" style="font-weight: 700; line-height: 100rpx; text-align: center;">{{item}}</view>
-      </picker-view-column>
-      </picker-view>
+			<picker-view
+			 indicator-class="middle"
+			 style="width: 100%; height: 500rpx;"
+			 value="{{[1]}}"
+			 bindchange="bindchangetwo"
+			>
+				<picker-view-column>
+					<view wx:for="{{arr1}}" wx:key="index" style="font-weight: 700; line-height: 100rpx; text-align: center;">{{item}}</view>
+				</picker-view-column>
+			</picker-view>
 			<button bindtap="after" style="bottom: 50rpx;" class="submit">下一步</button>
 		</block>
 		<block wx:if="{{id === 4}}">
 			<view class="info-one">你的专业</view>
 			<view class="info-three">
-				<input value="{{valuethree}}" focus="{{focus}}" bindinput="inputthree" bindblur="blur" bindfocus="focus" placeholder="输入你的专业" type="text" />
+				<input
+				 value="{{valuethree}}"
+				 focus="{{focus}}"
+				 bindinput="inputthree"
+				 bindblur="blur"
+				 bindfocus="focus"
+				 placeholder="输入你的专业"
+				 type="text"
+				/>
 			</view>
-			<button bindtap="submit" disabled="{{flagthree}}" style="bottom: {{bottom + keyheight * 2}}rpx;" class="submit">提交</button>
+			<button
+			 bindtap="submit"
+			 disabled="{{flagthree}}"
+			 style="bottom: {{bottom + keyheight * 2}}rpx;"
+			 class="submit"
+			>提交
+			</button>
 		</block>
 	</view>
 </view>
-<view class="modal-mask" wx:if="{{showmodal}}"></view>
+<view class="modal-mask" wx:if="{{showmodal}}" />
 <view class="content" wx:if="{{showmodal}}">
 	<view class="title">审核通过后才可以发布</view>
 	<view class="title-two">动态哦</view>
 	<button class="btn" bindtap="toconfirm">确认</button>
 </view>
+

@@ -3,142 +3,142 @@
 	height: 100vh;
 	position: relative;
 } */
-.body .bg{
-	width: 100vw;
-	height: 30vh;
-	background-image: url(https://www.yellowwei.cn/img/Group49.png);
-	background-size: cover;
+.body .bg {
+  width: 100vw;
+  height: 30vh;
+  background-image: url(https://www.yellowwei.cn/img/Group49.png);
+  background-size: cover;
 }
-.body .ad{
-	margin: 42rpx auto;
-	width: 90vw;
-	height: 130rpx;
-	border-radius: 20rpx;
-	background-image: url(https://www.yellowwei.cn/img/Group54.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+.body .ad {
+  margin: 42rpx auto;
+  width: 90vw;
+  height: 130rpx;
+  border-radius: 20rpx;
+  background-image: url(https://www.yellowwei.cn/img/Group54.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.bg .info{
-	width: 90vw;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.bg .info {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.bg .left{
-	display: flex;
+.bg .left {
+  display: flex;
 }
-.left .left-img{
-	width: 140rpx;
-	height: 140rpx;
-	border-radius: 70rpx;
+.left .left-img {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
 }
-.left .left-txt{
-	margin-left: 28rpx;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+.left .left-txt {
+  margin-left: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.left .top{
-	display: flex;
-	align-items: center;
+.left .top {
+  display: flex;
+  align-items: center;
 }
-.left .top .nickname{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 40rpx;
-line-height: 44rpx;
-color: #FFFFFF;
+.left .top .nickname {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40rpx;
+  line-height: 44rpx;
+  color: #ffffff;
 }
-.left .top .icon{
-	width: 44rpx;
-	height: 44rpx;
+.left .top .icon {
+  width: 44rpx;
+  height: 44rpx;
 }
-.left .bottom{
-	display: flex;
-	align-items: center;
+.left .bottom {
+  display: flex;
+  align-items: center;
 }
-.left .bottom .icon{
-	width: 30rpx;
-	height: 30rpx;
-	margin-right: 4rpx;
+.left .bottom .icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 4rpx;
 }
-.left .bottom .txt{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 26rpx;
-line-height: 30rpx;
-color: #FFFFFF;
+.left .bottom .txt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #ffffff;
 }
-.right .btn{
-	font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 26rpx;
-line-height: 30rpx;
-color: #FFFFFF;
-	width: 160rpx;
-	height: 60rpx;
-	border-radius: 30rpx;
-	background-color: #ADD651;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.right .btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #ffffff;
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #add651;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.function{
-	width: 90vw;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
+.function {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.function .item-one{
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 48rpx 0;
-	background-color: #fff;
-	border-bottom: 4rpx solid #F0F5F2;
+.function .item-one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48rpx 0;
+  background-color: #fff;
+  border-bottom: 4rpx solid #f0f5f2;
 }
-.function .item-one:nth-child(1){
-	border-top: 4rpx solid #F0F5F2;
+.function .item-one:nth-child(1) {
+  border-top: 4rpx solid #f0f5f2;
 }
-.item-one .left{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.item-one .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.item-one .left .icon{
-	width: 50rpx;
-	height: 50rpx;
-	margin-right: 4rpx;
+.item-one .left .icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 4rpx;
 }
-.item-one .left .txt{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 34rpx;
-line-height: 44rpx;
-color: #000000;
+.item-one .left .txt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34rpx;
+  line-height: 44rpx;
+  color: #000000;
 }
-.item-one .right{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.item-one .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.item-one .right .txt{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 28rpx;
-line-height: 30rpx;
-color: rgba(0, 0, 0, 0.4);
-margin-right: 5rpx;
+.item-one .right .txt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28rpx;
+  line-height: 30rpx;
+  color: rgba(0, 0, 0, 0.4);
+  margin-right: 5rpx;
 }
-.modal-mask{
-	width: 100%;
+.modal-mask {
+  width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -147,67 +147,66 @@ margin-right: 5rpx;
   opacity: 0.5;
   overflow: hidden;
   z-index: 9000;
-	color: #fff;
-	z-index: 9000;
+  color: #fff;
+  z-index: 9000;
 }
-swiper{
-	position: absolute;
-	width: 90vw;
-	height: 50vh;
-	left: 5vw;
-	top: 25vh;
-	z-index: 9900;
+swiper {
+  position: absolute;
+  width: 90vw;
+  height: 50vh;
+  left: 5vw;
+  top: 25vh;
+  z-index: 9900;
 }
-swiper-item image{
-	width: 100%;
-	height: 100%;
+swiper-item image {
+  width: 100%;
+  height: 100%;
 }
-.close{
-	width: 130rpx;
-	height: 130rpx;
-	position: absolute;
-	top: 77vh;
-	left: 50vw;
-	transform: translateX(-65rpx);
-	z-index: 9900;
+.close {
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  top: 77vh;
+  left: 50vw;
+  transform: translateX(-65rpx);
+  z-index: 9900;
 }
-.content{
-	position: absolute;
-	left: 100rpx;
-	top: 25vh;
-	width: 576rpx;
-	height: 752rpx;
+.content {
+  position: absolute;
+  left: 100rpx;
+  top: 25vh;
+  width: 576rpx;
+  height: 752rpx;
   background-image: url(https://www.yellowwei.cn/img/Group33.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 20rpx;
-	z-index: 9900;
-	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 36rpx;
-line-height: 44rpx;
-text-align: center;
-color: #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20rpx;
+  z-index: 9900;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36rpx;
+  line-height: 44rpx;
+  text-align: center;
+  color: #000000;
 }
-.content .title{
-	margin-top: 430rpx;
-	margin-bottom: 5rpx;
+.content .title {
+  margin-top: 430rpx;
+  margin-bottom: 5rpx;
 }
-.content .btn{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 80%;
-	height: 80rpx;
-	background-color: #ADD651;
-	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32rpx;
-line-height: 38rpx;
-color: #FFFFFF;
-border-radius: 40rpx;
-margin-top: 100rpx;
+.content .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80rpx;
+  background-color: #add651;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32rpx;
+  line-height: 38rpx;
+  color: #ffffff;
+  border-radius: 40rpx;
+  margin-top: 100rpx;
 }
-

@@ -4,19 +4,38 @@
 			<view class="top">给自己设置个</view>
 			<view class="bottom">形象吧</view>
 		</view>
-		<view class="info-two"></view>
-		<image mode="aspectFill" style="border-radius: {{bdr}};" class="img" bindtap="upload" src="{{src}}"></image>
+		<view class="info-two" />
+		<image
+		 mode="aspectFill"
+		 style="border-radius: {{bdr}};"
+		 class="img"
+		 bindtap="upload"
+		 src="{{src}}"
+		/>
 		<view class="info-three">
-			<input value="{{value}}" bindinput="input" bindblur="blur" bindfocus="focus" placeholder="输入昵称" type="text" />
+			<input
+			 value="{{value}}"
+			 bindinput="input"
+			 bindblur="blur"
+			 bindfocus="focus"
+			 placeholder="输入昵称"
+			 type="text"
+			/>
 		</view>
 		<view class="info-four">
-			<view class="dian"></view>
+			<view class="dian" />
 			<view class="left">别忘了上传头像哦</view>
 		</view>
-		<button bindtap="submit" disabled="{{flag}}" style="bottom: {{bottom + keyheight * 2}}rpx;" class="submit">提交</button>
+		<button
+		 bindtap="submit"
+		 disabled="{{flag}}"
+		 style="bottom: {{bottom + keyheight * 2}}rpx;"
+		 class="submit"
+		>提交
+		</button>
 	</view>
 </view>
-<view class="modal-mask" wx:if="{{showmodal}}"></view>
+<view class="modal-mask" wx:if="{{showmodal}}" />
 <view class="content" wx:if="{{showmodal}}">
 	<view class="title">只有实名认证后才可以发布</view>
 	<view class="title-two">动态哦</view>
