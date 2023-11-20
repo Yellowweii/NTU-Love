@@ -1,5 +1,6 @@
 # ntulove
 通大交友恋爱微信小程序
+Give a ⭐️ if this project helped you !
 <br>
 <img width="200" height="200"  alt="image" src="https://github.com/yellowweii/ntulove/assets/138266079/3eee5876-a713-471f-b4a5-c111c9580909">
 <br>
